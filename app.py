@@ -23,12 +23,13 @@ def get_video_metadata(url): #gets the video metadata from url
 
 def get_audio(url: object) -> object: #function that converts video to audio file
     yt = YouTube(url)
-    audio = yt.streams.filter(only_audio=True).first()
-    out_file = audio.download(output_path=".")
+    video = yt.streams.filter(only_audio=True).first()
+    out_file=video.download(output_path=".")
     base, ext = os.path.splitext(out_file)
-    new_file = base + '.mp3'
-    os.rename(out_file, new_file) #renames the file as .mp3 file extension
-    return new_file #function returns the new audio file
+    new_file = base+'.mp3'
+    os.rename(out_file, new_file)
+    a = new_file
+    return a
 
 
 def get_text(url, model): #function that converts audio to text
