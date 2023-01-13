@@ -22,3 +22,4 @@ The pipeline() makes it simple to use any model from the Hub for inference on an
 - [x] HuggingFace Pipeline model (sshleifer/distilbart-cnn-12-6) is used to generate the transcript summary
 
 The code is also hosted on Streamlit Cloud and can be accessed using the link: <br/>
+https://devashishk99-youtube-summarizer-whisper-app-5fuwx3.streamlit.app/
